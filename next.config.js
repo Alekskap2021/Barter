@@ -1,6 +1,15 @@
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: true,
+// }
+
+// module.exports = nextConfig
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
+  swcMinify: true,
+  experimental: { esmExternals: true },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
